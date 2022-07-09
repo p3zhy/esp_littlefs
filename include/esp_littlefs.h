@@ -25,8 +25,8 @@ extern "C" {
 typedef struct {
     const char *base_path;            /**< Mounting point. */
     const char *partition_label;      /**< Label of partition to use. */
-    uint8_t format_if_mount_failed:1; /**< Format the file system if it fails to mount. */
-    uint8_t dont_mount:1;             /**< Don't attempt to mount or format. Overrides format_if_mount_failed */
+    uint8_t format_if_mount_failed; /**< Format the file system if it fails to mount. */
+    uint8_t dont_mount;             /**< Don't attempt to mount or format. Overrides format_if_mount_failed */
 } esp_vfs_littlefs_conf_t;
 
 /**

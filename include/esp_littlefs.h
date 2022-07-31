@@ -43,6 +43,8 @@ typedef struct {
  */
 esp_err_t esp_vfs_littlefs_register(const esp_vfs_littlefs_conf_t * conf);
 
+
+
 /**
  * Unregister and unmount littlefs from VFS
  *
